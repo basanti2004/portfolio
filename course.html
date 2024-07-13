@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4c3b57203.js" crossorigin="anonymous"></script>
+    <title>Basanti Rathod</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="toggle-menu">
+        <button id="toggle-menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <button id="close-left-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="./images/img_basanti.jpeg" alt="Basanti Rathod" class="profile-pic">
+            <h2>Basanti Rathod</h2>
+            <hr>
+            <p>basntirathod@gmail.com</p>
+            <p>8087449906</p>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">INTRODUCTION</a></li>
+                    <li><a href="./projects.html">PROJECTS</a></li>
+                    <li><a href="./skills.html">SKILLS</a></li>
+                    <li><a href="./course.html" class="active">COURSE</a></li>
+                    <li><a href="./experience.html">EXPERIENCE</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                    <a href="https://github.com/basanti2004?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/basanti-rathod-84229026a"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/@basantirathod2004"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="projects">
+                <h1>Full stack web development</h1>
+               <img src="./images/udemy-cer.jpg.jpeg" width="120%" height="20%" alt="">
+            </div>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleMenuBtn = document.getElementById('toggle-menu-btn');
+            const sidebar = document.querySelector('.sidebar');
+            const closeSidebarBtn = document.getElementById('close-left-sidebar');
+
+            toggleMenuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('show-menu');
+            });
+
+            closeSidebarBtn.addEventListener('click', () => {
+                sidebar.classList.remove('show-menu');
+            });
+        });
+
+        const toggleButton = document.getElementById('toggle-menu-btn');
+        const mainContent = document.getElementById('main-content');
+
+        toggleButton.addEventListener('click', function() {
+            mainContent.classList.toggle('full-width');
+        });
+        
+    </script>
+</body>
+</html>
