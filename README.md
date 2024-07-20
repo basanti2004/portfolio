@@ -1,5 +1,7 @@
 # portfolio
 develope portfolio website which gives all information about myself includes skills , projects , experience , course , etc
+## live demo link - 
+https://basanti2004.github.io/portfolio/
 # Introduction page 
 # if want resume pdf copy then easily get by clicking the resume pdf button
 ![image](https://github.com/user-attachments/assets/ed6e9bf3-1491-496e-a20d-ab1c143cfe87)
